@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
   //     return a + b;
   // }
 
-const FirstApp = ({ title = 'Hola, Soy un titulo', subTitle, name }) => {
+export const FirstApp = ({ title = 'Hola, Soy un titulo', subTitle, name }) => {
 
 //   console.log(props);
   
@@ -26,13 +26,14 @@ const FirstApp = ({ title = 'Hola, Soy un titulo', subTitle, name }) => {
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subTitle: PropTypes.number.isRequired 
+    // subTitle: PropTypes.number.isRequired 
 }
 
-FirstApp.defaultProps = {
-    title: 'No hay título',
-    subTitle: 'No hay subtítulo',       
-    name: 'Eduardo',
-}
+// Será eliminado en futuras versiones de React
+// FirstApp.defaultProps = {
+//     title: 'No hay título',
+//     subTitle: 'No hay subtítulo',       
+//     name: 'Eduardo',
+// }
 
 export default FirstApp
